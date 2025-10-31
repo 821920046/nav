@@ -319,3 +319,13 @@ export type InternalProps = {
   loginViewCount: number
   userViewCount: number
 }
+// 在现有的 INavProps 接口中添加 id 字段
+export interface INavProps {
+  id?: string; // 添加唯一标识
+  name: string;
+  desc?: string;
+  url: string;
+  icon?: string;
+  urls?: Record<string, string>;
+  [key: string]: any;
+}
